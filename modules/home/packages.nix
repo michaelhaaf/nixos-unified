@@ -5,18 +5,60 @@
   # Search for packages here: https://search.nixos.org/packages
   home.packages = with pkgs; [
     # Unix tools
-    ripgrep # Better `grep`
+    (pass.withExtensions (ext: [ ext.pass-otp ]))
+    age
+    borgbackup
+    bzip2
+    chezmoi
+    curl
+    delta
+    diffutils
+    eza
+    file
+    findutils
     fd
-    sd
-    tree
+    gawk
+    gh
     gnumake
+    gnugrep
+    gnupg
+    gnused
+    gnutar
+    gzip
+    htop
+    imagemagick
+    ipcalc
+    lsof
+    man
+    netcat-gnu
+    nmap
+    nix-output-monitor
+    nix-tree
+    nix-info
+    nixpkgs-fmt
+    nvd
+    openssh
+    openssl
+    p7zip
+    python3
+    ripgrep
+    rclone
+    rsync
+    scripts
+    sd
+    shellcheck
+    tmux
+    tree
+    ugrep
+    unar
+    unzip
+    watch
+    xz
+    yq
+    zstd
 
     # Nix dev
     cachix
-    nil # Nix language server
-    nix-info
-    nixpkgs-fmt
-
 
     # On ubuntu, we need this less for `man home-configuration.nix`'s pager to
     # work.

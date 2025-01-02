@@ -44,7 +44,6 @@
     ripgrep
     rclone
     rsync
-    scripts
     sd
     shellcheck
     tmux

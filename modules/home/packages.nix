@@ -6,10 +6,13 @@
   home.packages = with pkgs; [
     # Unix tools
     (pass.withExtensions (ext: [ ext.pass-otp ]))
+    act
     age
+    bc
     borgbackup
     bzip2
     chezmoi
+    codeberg-cli
     curl
     delta
     diffutils
@@ -17,17 +20,22 @@
     file
     findutils
     fd
+    ffmpeg
+    fuzzel
     gawk
     gh
+    ghostscript
     gnumake
     gnugrep
     gnupg
     gnused
     gnutar
     gzip
+    hub
     htop
     imagemagick
     ipcalc
+    libreoffice-fresh
     lsof
     man
     netcat-gnu
@@ -39,6 +47,8 @@
     nvd
     openssh
     openssl
+    pandoc
+    pdftk
     p7zip
     python3
     ripgrep
@@ -46,14 +56,19 @@
     rsync
     sd
     shellcheck
+    stow
+    tessen
     tmux
     tree
     ugrep
     unar
     unzip
     watch
+    wkhtmltopdf
     xz
     yq
+    zathura
+    zoxide
     zstd
 
     # Nix dev

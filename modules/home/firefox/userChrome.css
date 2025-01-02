@@ -1,0 +1,11 @@
+#TabsToolbar {
+  visibility: collapse !important;
+}
+
+#sidebar-header {
+  visibility: collapse !important;
+}
+
+.tabbrowser-tab[usercontextid] .tab-bottom-line {
+    display: none !important;
+}

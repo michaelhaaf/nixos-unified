@@ -68,6 +68,10 @@
 
   # List services that you want to enable:
 
+  # Enable spice virtual agent for NixOS as guest VM
+  services.qemuGuest.enable = true;
+  services.spice-vdagentd.enable = true;
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 

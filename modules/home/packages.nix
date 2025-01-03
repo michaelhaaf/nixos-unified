@@ -11,6 +11,7 @@
     bc
     borgbackup
     bzip2
+    cachix
     chezmoi
     codeberg-cli
     curl
@@ -20,8 +21,6 @@
     file
     findutils
     fd
-    ffmpeg
-    fuzzel
     gawk
     gh
     ghostscript
@@ -35,7 +34,7 @@
     htop
     imagemagick
     ipcalc
-    libreoffice-fresh
+    less
     lsof
     man
     netcat-gnu
@@ -50,7 +49,6 @@
     pandoc
     pdftk
     p7zip
-    python3
     ripgrep
     rclone
     rsync
@@ -70,29 +68,17 @@
     zathura
     zoxide
     zstd
-
-    # Nix dev
-    cachix
-
-    # On ubuntu, we need this less for `man home-configuration.nix`'s pager to
-    # work.
-    less
   ];
 
   # Programs natively supported by home-manager.
   # They can be configured in `programs.*` instead of using home.packages.
   programs = {
-    # Better `cat`
     bat.enable = true;
-    # Type `<ctrl> + r` to fuzzy search your shell history
-    fzf.enable = true;
     jq.enable = true;
-    # Install btop https://github.com/aristocratos/btop
     btop.enable = true;
-    # Tmate terminal sharing.
     tmate = {
       enable = true;
-      #host = ""; #In case you wish to use a server other than tmate.io 
+      #host = ""; #In case you wish to use a server other than tmate.io
     };
   };
 }

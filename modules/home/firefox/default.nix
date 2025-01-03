@@ -6,5 +6,6 @@
         userChrome = builtins.readFile ./userChrome.css;
       };
     };
+    policies = builtins.readFile ./policies.json
   };
 }

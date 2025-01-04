@@ -34,6 +34,7 @@
         commit.template = builtins.readFile ./commit-template.txt;
         push.autoSetupRemote = true;
         rerere.enabled = true;
+        core.editor = "nvim";
       };
     };
     lazygit.enable = true;

@@ -4,8 +4,6 @@
   #
   # Search for packages here: https://search.nixos.org/packages
   home.packages = with pkgs; [
-    # Unix tools
-    (pass.withExtensions (ext: [ ext.pass-otp ]))
     act
     age
     bc

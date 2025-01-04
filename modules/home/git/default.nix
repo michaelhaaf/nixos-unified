@@ -26,9 +26,10 @@
           side-by-side = true;
         };
       };
-      signing = {
-        signByDefault = true;
-      };
+      # signing = {
+      #   signByDefault = true;
+      #   key = null;
+      # };
       extraConfig = {
         init.defaultBranch = "main";
         commit.template = builtins.readFile ./commit-template.txt;

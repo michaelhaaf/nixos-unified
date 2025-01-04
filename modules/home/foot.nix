@@ -19,5 +19,6 @@
       cursor = {
         color = "11111b f5e0dc";
       };
+    };
   };
 }

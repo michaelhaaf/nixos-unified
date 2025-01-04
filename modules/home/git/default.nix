@@ -23,7 +23,7 @@
         options = {
           navigate = true;
           dark = true;
-          side-by-side=true;
+          side-by-side = true;
         };
       };
       signing = {

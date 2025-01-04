@@ -10,5 +10,5 @@
       "--marker ⇒"
       "--preview 'bat -n --color=always {}'"
     ]
-  };
-}
+      };
+  }
